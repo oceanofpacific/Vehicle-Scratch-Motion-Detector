@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Local configuration
+.env
+.env.*
+!.env.example
+
+# Surveillance videos and exported media
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.m4v
+*.wmv
+*.flv
+*.webm
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tif
+*.tiff
+
+# Generated reports and analysis output
+output/
+outputs/
+reports/
+*_reports/
+*_scan/
+*_scans/
+calibration/
+screenshots/
+behavior_screenshots/
+clips/
+debug_video.mp4
+events.csv
+behavior_events.csv
+report.html
+behavior_report.html
+*.log
+
+# Local annotations may reveal private camera/vehicle layout.
+vehicle_edges.json
+damage_zones.json
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
