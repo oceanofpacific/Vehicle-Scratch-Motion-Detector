@@ -7,9 +7,11 @@ __pycache__/
 .ruff_cache/
 .coverage
 htmlcov/
+*.spec
 
 # Virtual environments
 .venv/
+.venv-build/
 venv/
 env/
 ENV/
@@ -39,6 +41,10 @@ ENV/
 output/
 outputs/
 reports/
+release/
+build/
+dist/
+installer/Output/
 *_reports/
 *_scan/
 *_scans/

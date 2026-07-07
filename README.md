@@ -38,6 +38,25 @@ pip install -r requirements.txt
 
 Optional: install `ffmpeg` and make sure it is available on `PATH`. If `ffmpeg` is missing, the tool skips clip export without stopping the scan.
 
+## Windows Executable And Installer
+
+For Windows users who do not want to install Python, maintainers can build release artifacts:
+
+```powershell
+.\build_windows.ps1 -Version 0.1.0
+```
+
+The build writes a portable zip and, when Inno Setup is installed, a Windows installer to `release/`.
+
+GitHub Actions can also build releases automatically. Push a version tag such as `v0.1.0` to create a GitHub Release with Windows artifacts:
+
+```powershell
+git tag v0.1.0
+git push origin v0.1.0
+```
+
+See [docs/WINDOWS_RELEASE.md](docs/WINDOWS_RELEASE.md).
+
 ## Basic Motion Scan
 
 ```bash
